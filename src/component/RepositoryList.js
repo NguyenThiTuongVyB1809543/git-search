@@ -7,8 +7,7 @@ function RepositoryList({ repositories, onItemClick, selectedRepository, commits
             {repositories.map((repo) => ( 
                 <div
                     key={repo.id}
-                    className="repository" 
-                    onClick={() => onItemClick(repo.name)}
+                    className="repository"  
                 >
                     <h3>{repo.name}</h3>
                     <p>{repo.description}</p>
